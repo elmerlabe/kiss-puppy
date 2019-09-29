@@ -1,10 +1,13 @@
 ---
 layout: base.njk
-title: Kiss Puppy
+title: Home
 ---
 
 {% include "navbar.njk" %}
 <section id="home">
+  <video autoplay="autoplay" muted="muted" loop="loop">
+    <source src="/static/vid/videoplayback.mp4" type="video/mp4">
+  </video>
   <div class="container">
     <div class="row">
       <div class="text-right col-md-12">
@@ -23,9 +26,10 @@ title: Kiss Puppy
 
     </div>
   </div>
+
 </section>
 
-<section id="news">
+<section id="news" class="bg-white">
   <div class="container">
     <div class="row justify-content-center">
       <div class="br1 mt-120">
@@ -133,7 +137,7 @@ title: Kiss Puppy
   </div>
 </section>
 
-<section id="music" class="pb-120">
+<section id="music" class="pb-120 bg-white">
   <div class="container">
     <div class="row justify-content-center">
       <div class="br1 my-max">
