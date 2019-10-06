@@ -32,13 +32,13 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }
 
-/*#home {
+#moreNews {
     background-image: url(img/hero_image.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 80vh;
-}*/
+}
 
 h2 {
     letter-spacing: 2px;
@@ -200,4 +200,10 @@ ul.list-no-style {
 .ico-grayscale:hover {
     -webkit-filter: none;
     filter: none;
+}
+
+.news-date {
+    font-size: 14px;
+    font-style: italic;
+    
 }

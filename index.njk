@@ -38,60 +38,24 @@ title: Home
         </div>
       </div>
     </div>
+    
     <div class="row">
-      <div class="col-md-6">
-        <div class="text-center px-4 mt-80">
-          <a class="link-decor" href="#">
-            <img class="news-img" src="/static/img/img_news-1.png">
-            <p class="mt-4">
-              <b>August Gig Schedule</b>
-            </p>
-          </a>
-          <p class="text-left news-text">Golden Luger Production’s 11th Anniversary together with MRPD and
-            other talented local bands. Live in Handuraw Pizza Mango ...</p>
+      {%- for post in collections.posts -%}
+        <div class="col-md-6">
+          <div class="text-center px-4 mt-80">
+            <a class="link-decor" href="{{post.url}}">
+              <img class="news-img" src="{{post.data.image}}">
+              <p class="mt-4">
+                <b>{{ post.data.title }}</b>
+              </p>
+            </a>
+            <p class="text-left news-text">{{post.data.summary}}</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="text-center px-4 mt-80">
-          <a class="link-decor" href="#">
-            <img class="news-img" src="/static/img/img_news-2.png">
-            <p class="mt-4">
-              <b>First Album on the way! (3 more tracks)</b>
-            </p>
-          </a>
-          <p class="text-left">We are happy to announce that we are currently working with our 1st
-            debut album. This includes a lot of funky but heavy songs from...</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="text-center px-4 mt-80">
-          <a class="link-decor" href="#">
-            <img class="news-img" src="/static/img/img_news-3.png">
-            <p class="mt-4">
-              <b>Monster Radio Guesting</b>
-            </p>
-          </a>
-          <p class="text-left">Kiss Puppy was live in Monster Radio BT 109.5 with DJ Tee. Check out
-            their funny guesting where they sing their newest compostion...</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="text-center px-4 mt-80">
-          <a class="link-decor" href="#">
-            <img class="news-img" src="/static/img/img_news-4.png">
-            <p class="mt-4">
-              <b>Cosmic Kid’s EP Anniversary at Red Gate Pizzeria</b>
-            </p>
-          </a>
-          <p class="text-left">We are very challenged to play acoustic without a beat for the first
-            time. We are very thankful to Cosmic Kid and the team for singing...</p>
-        </div>
-      </div>
+      {%- endfor -%}
     </div>
     <div class="text-center font-weight-bold my-5">
-      <a class="link-decor" href="#">See More</a>
+      <a class="link-decor" href="/news">See More</a>
     </div>
   </div>
 </section>
@@ -166,25 +130,4 @@ title: Home
   </div>
 </section>
 
-<footer class="bg-light py-5">
-  <div class="container mb-4">
-    <div class="row text-center">
-      <div class="col-md-12">
-        <img src="/static/img/lip.svg" height="130" width="130">
-      </div>
-    </div>
-    <div class="row text-center">
-      <div class="col-md-12">
-        <a class="link-decor" href="https://www.facebook.com/kisspuppymusic/" target="_blank">
-          <img class="mx-3 ico-grayscale" src="/static/img/icons/fb-color.ico" height="35" width="35">
-        </a>
-        <a class="link-decor" href="https://www.instagram.com/" target="_blank">
-          <img class="mx-3 ico-grayscale" src="/static/img/icons/instagram-color.ico" height="30" width="30">
-        </a>
-        <a class="link-decor" href="https://soundcloud.com/pottrs-music/" target="_blank">
-          <img class="mx-3 ico-grayscale" src="/static/img/icons/soundcloud-color.ico" height="30" width="30">
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
+{% include "footer.njk" %}
