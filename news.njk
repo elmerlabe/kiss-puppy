@@ -1,0 +1,43 @@
+---
+layout: base.njk
+title: News
+---
+
+<section id="moreNews" class="mb-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12 mt-5 pt-5">
+        <img src="/static/img/lip.svg" height="100px" width="100px">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {%- for post in collections.posts -%}
+        <div class="mt-5">
+        <hr>
+          <a class="link-decor" href="{{post.url}}">
+            <h2 class="font-weight-bold">{{post.data.title}}
+            <p class="lead">{{post.data.summary}}</p>
+          </a>
+          <small class="news-date">Posted on {{ post.date }}</small>
+        </div>
+        {%- endfor -%}
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-10 text-right">
+        <h5><a class="link-decor" href="/">← Back to Main Page</a><h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% include "footer.njk" %}
+
+

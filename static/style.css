@@ -1,10 +1,39 @@
 body {
     font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.bg-white {
+    background-color: white;
 }
 
 #home {
+    position: relative;
+    background-color: #1d1d1d;
+    height: 90vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+  
+#home video {
+  filter: grayscale(100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#moreNews {
     background-image: url(img/hero_image.png);
-    /*background-color: rgb(0, 0, 0, 0.2);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -171,4 +200,10 @@ ul.list-no-style {
 .ico-grayscale:hover {
     -webkit-filter: none;
     filter: none;
+}
+
+.news-date {
+    font-size: 14px;
+    font-style: italic;
+    
 }
