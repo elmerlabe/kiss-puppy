@@ -40,19 +40,21 @@ title: Home
     </div>
     
     <div class="row">
-      {%- for post in collections.posts -%}
-        <div class="col-md-6">
-          <div class="text-center px-4 mt-80">
-            <a class="link-decor" href="{{post.url}}">
-              <img class="news-img" src="{{post.data.thumbnail}}">
-              <p class="mt-4">
-                <b>{{ post.data.title }}</b>
-              </p>
-            </a>
-            <p class="text-left news-text">{{post.data.summary}}</p>
+      {%- set postslist = collections.posts | head(-4) -%}
+      {%- for post in postslist -%}
+          <div class="col-md-6">
+            <div class="text-center px-4 mt-80">
+              <a class="link-decor" href="{{post.url}}">
+                <img class="news-img" src="{{post.data.thumbnail}}">
+                <p class="mt-4">
+                  <b>{{ post.data.title }}</b>
+                </p>
+              </a>
+              <p class="text-left news-text">{{post.data.summary}}</p>
+            </div>
           </div>
-        </div>
       {%- endfor -%}
+    
     </div>
     <div class="text-center font-weight-bold my-5">
       <a class="link-decor" href="/news">See More</a>
