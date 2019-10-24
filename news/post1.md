@@ -1,5 +1,4 @@
 ---
-layout: news.njk
 tags: post
 title: August Gig Schedule
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

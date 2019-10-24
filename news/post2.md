@@ -1,5 +1,4 @@
 ---
-layout: news.njk
 tags: post
 title: First Album on the way!(3 more tracks)
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

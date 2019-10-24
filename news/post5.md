@@ -1,5 +1,4 @@
 ---
-layout: news.njk
 tags: post
 title: The quick brown fox jumps
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

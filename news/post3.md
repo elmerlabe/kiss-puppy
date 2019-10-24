@@ -1,5 +1,4 @@
 ---
-layout: news.njk
 tags: post
 title: Moster Radio Guesting
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

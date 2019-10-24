@@ -1,0 +1,5 @@
+{
+    "layout": "/news.njk",
+    "permalink": "news/{{ title | slug }}/index.html",
+    "tags": "post"
+}
