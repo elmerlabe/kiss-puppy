@@ -1,4 +1,5 @@
 ---
+tags: bio
 title: Biography
 image: /static/img/img_biography.png
 ---
