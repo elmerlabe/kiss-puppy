@@ -34,4 +34,4 @@ collections:
           - {label: "Tags", name: "tags", widget: "string", default: "bio"}
           - {label: "Title", name: "title", widget: "string", default: "Biography"}
           - {label: "Image", name: "image", widget: "image"}
-          - {lagel: "Body", name: "body", widget: "markdown"}
+          - {lagel: "Content", name: "content", widget: "markdown"}
