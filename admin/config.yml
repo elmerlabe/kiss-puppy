@@ -31,6 +31,7 @@ collections:
         name: "bio"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: "Tags", name: "tags", widget: "string", default: "bio"}
           - {label: "Title", name: "title", widget: "string", default: "Biography"}
           - {label: "Image", name: "image", widget: "image"}
           - {lagel: "Body", name: "body", widget: "markdown"}
