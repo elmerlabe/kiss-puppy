@@ -1,3 +1,5 @@
+const {DateTime} = require('luxon');
+
 module.exports = function(e) {
     e.addPassthroughCopy('static');
     e.addPassthroughCopy('admin');
@@ -5,6 +7,10 @@ module.exports = function(e) {
 
     e.addCollection("posts", function(collection) {
         return collection.getFilteredByTag("post").reverse();
+    });
+
+    e.addFilter("readableDate", function(dateObj) {
+        return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
     });
 
     e.addFilter("head", function(array, n) {

@@ -10,8 +10,12 @@ title: News
         <h1 class="font-weight-bold mb-5">{{title}}</h1>
         <img src="{{thumbnail}}" width="90%" height="55%">
         <p>{{ content | safe }}</p>
-        <small class="news-date text-muted">Posted on {{ date }}</small>
+        <p class="news-date text-muted">Posted on {{ date | readableDate }}</p>
+        <h5 class="text-right mt-3">
+          <a class="link-decor" href="/news">← Back to News Page</a>
+        </h5>
       </div>
     </div>
   </div>
+</div>
 </section>

@@ -22,16 +22,16 @@ title: News
         <hr>
           <a class="link-decor" href="{{post.url}}">
             <h2 class="font-weight-bold">{{post.data.title}}
-            <p class="lead">{{post.data.summary}}</p>
+            <p class="lead mt-2">{{post.data.summary}}</p>
           </a>
-          <small class="news-date">Posted on {{ post.date }}</small>
+          <small class="text-muted news-date">Posted on {{ post.date | readableDate }}</small>
         </div>
         {%- endfor -%}
       </div>
     </div>
     <div class="row mt-5">
       <div class="col-md-10 text-right">
-        <h5><a class="link-decor" href="/">← Back to Main Page</a><h5>
+        <h5><a class="link-decor" href="/">← Back to Main Page</a></h5>
       </div>
     </div>
   </div>
