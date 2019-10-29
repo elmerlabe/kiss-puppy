@@ -68,7 +68,7 @@ title: Home
     <div class="row justify-content-center">
       <div class="br1-bio my-max">
         <div class="br2-bio">
-          <h2 class="mx-4 font-weight-bold">{{biography.data.title}}</h2>
+          <h2 class="mx-4 font-weight-bold">{{biography.data.heading}}</h2>
         </div>
       </div>
     </div>
@@ -86,30 +86,34 @@ title: Home
 
 <section id="music" class="pb-120 bg-white">
   <div class="container">
+    {%- for m in collections.music -%}
     <div class="row justify-content-center">
       <div class="br1 my-max">
         <div class="br2">
-          <h2 class="mx-4 font-weight-bold">What's Kickin?</h2>
+          <h2 class="mx-4 font-weight-bold">{{m.data.heading}}</h2>
         </div>
       </div>
     </div>
     <div class="text-center mt-n80">
-      <p>We Released our first ever single Pussycat Balls. <br>Stream online now!</p>
+      <p>{{m.data.subheading}}</p>
     </div>
     <div class="row mt-80 my-auto">
       <div class="col-md-6 text-center">
-        <img class="mx-auto drop-shadow" src="/static/img/img_album.png" height="250" width="85%">
+        <img class="mx-auto drop-shadow" src="{{m.data.image}}" height="250" width="85%">
       </div>
       <div class="col-md-6 text-left my-auto">
         <div class="text-left">
           <ul class="list-no-style my-auto">
-            <li class="my-2"><a class="link-decor" href="https://soundcloud.com/pottrs-music/pottrs-pussycat-balls" target="_blank"><b>Soundcloud</b></a></li>
-            <li class="my-2"><a class="link-decor" href="https://www.youtube.com/watch?v=5Pd-PrVmEG0" target="_blank"><b>Music Video</b></a></li>
-            <li class="my-2"><a class="link-decor" href="#"><b>Bandcamp</b></a></li>
+          {%- for music in m.data.media -%}
+            <li class="my-2"><a class="link-decor" href="{{music.link1}}" target="_blank"><b>{{music.title1}}</b></a></li>
+            <li class="my-2"><a class="link-decor" href="{{music.link2}}" target="_blank"><b>{{music.title2}}</b></a></li>
+            <li class="my-2"><a class="link-decor" href="{{music.link3}}" target="_blank"><b>{{music.title3}}</b></a></li>
+          {%- endfor -%}
           </ul>
         </div>
       </div>
     </div>
+    {%- endfor -%}
   </div>
 </section>
 

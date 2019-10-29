@@ -7,7 +7,6 @@ module.exports = function(e) {
         return collection.getFilteredByTag("post").reverse();
     });
 
-
     e.addFilter("head", function(array, n) {
         return array.slice(0, n);
     });

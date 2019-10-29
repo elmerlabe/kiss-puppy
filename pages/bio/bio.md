@@ -1,6 +1,6 @@
 ---
 tags: bio
-title: Biography
+heading: Biography
 image: /static/img/img_biography.png
 content: >-
   From the former name Potters, Kiss Puppy was originally a folk
