@@ -5,12 +5,14 @@ subheading: >-
   We Released our first ever single Pussycat Balls.
   Stream online now!
 image: /static/img/img_album.png
-media:
-  - title1: Soundcloud
-    link1: https://soundcloud.com/pottrs-music/pottrs-pussycat-balls
-  - title2: Music Video
-    link2: https://www.youtube.com/watch?v=5Pd-PrVmEG0
-  - title3: Bandcamp
-    link3: https://bandcamp.com
+media1:
+  title: Soundcloud
+  link: https://soundcloud.com/pottrs-music/pottrs-pussycat-balls
+media2:
+  title: Music Video
+  link: https://www.youtube.com/watch?v=5Pd-PrVmEG0
+media3:
+  title: Bandcamp
+  link: https://bandcamp.com
 
 ---

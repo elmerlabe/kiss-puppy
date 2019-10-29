@@ -104,11 +104,9 @@ title: Home
       <div class="col-md-6 text-left my-auto">
         <div class="text-left">
           <ul class="list-no-style my-auto">
-          {%- for music in m.data.media -%}
-            <li class="my-2"><a class="link-decor" href="{{music.link1}}" target="_blank"><b>{{music.title1}}</b></a></li>
-            <li class="my-2"><a class="link-decor" href="{{music.link2}}" target="_blank"><b>{{music.title2}}</b></a></li>
-            <li class="my-2"><a class="link-decor" href="{{music.link3}}" target="_blank"><b>{{music.title3}}</b></a></li>
-          {%- endfor -%}
+            <li class="my-2"><a class="link-decor" href="{{m.data.media1.link}}" target="_blank"><b>{{m.data.media1.title}}</b></a></li>
+            <li class="my-2"><a class="link-decor" href="{{m.data.media2.link}}" target="_blank"><b>{{m.data.media2.title}}</b></a></li>
+            <li class="my-2"><a class="link-decor" href="{{m.data.media3.link}}" target="_blank"><b>{{m.data.media3.title}}</b></a></li>
           </ul>
         </div>
       </div>
